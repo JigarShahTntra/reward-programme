@@ -25,8 +25,9 @@ gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'devise_invitable', '~> 2.0.0'
 gem "rolify"
 gem "cancan"
+gem 'carrierwave', '~> 2.0'
 # Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
@@ -41,9 +42,11 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem "letter_opener"
   gem 'spring'
   gem 'pry', '~> 0.12.2'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'factory_girl_rails'
   gem 'rspec-rails', '~> 4.0.0.beta'
 end
 
