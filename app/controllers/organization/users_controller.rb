@@ -26,9 +26,12 @@ class Organization::UsersController < ApplicationController
     end
   end
 
-  def edit; end
+  def edit
+    authorize! :read, @user
+  end
 
   def update
+    authorize! :update, @user
     @user.remove_role @user.has_roles
     @user.add_role params[:user][:role]
     if @user.update(user_params)
