@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DeloitteRewardSystem</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_pack_tag 'session', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'session', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <% if notice.present? || alert.present? %>
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+      <% end %>
+      <div class="row login-form">
+        <div class="col-xl-4 offset-xl-1 col-lg-6 offset-lg-1 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+          <div class="logo-row">
+            <a href="javascript:;">
+              <%= image_tag 'deloitte-logo-white.svg', class: "logo" %>
+              <span class="slogan">Reward Portal</span>
+            </a>
+          </div>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

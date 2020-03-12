@@ -1,0 +1,192 @@
+a:hover,
+a:focus,
+a:active,
+.btn:focus,
+.btn:active{
+  outline:none;
+  box-shadow:none;
+  text-decoration:none
+}
+a{
+  transition:color 0.15s ease-in-out;
+  -moz-transition:color 0.15s ease-in-out;
+  -webkit-transition:color 0.15s ease-in-out
+}
+.login-form{
+  min-height:100vh;
+  align-items:center;
+  font-family:'Open Sans', sans-serif;
+}
+.login-form .logo-row{
+  margin:30px 0 45px 0;
+}
+.login-form .logo{
+  width:auto
+}
+.login-form .slogan{
+  margin:0;
+  color:#fff;
+  letter-spacing:.5px
+}
+.login-form form{
+  margin:30px 0;
+  background:#86BC24
+}
+.login-form form h1{
+  color:#fff;
+  margin:0 0 2.5rem 0;
+  font-weight:600;
+  letter-spacing:.5px
+}
+.login-form .form-group{
+  margin-bottom:2rem
+}
+.login-form label{
+  color:#0f0b0b
+}
+.login-form .form-control{
+  border-color:#fff
+}
+.login-form .input-group-text{
+  border-color:transparent
+}
+.login-form .btn-row{
+  align-items:center
+}
+.login-form .btn{
+  min-width:120px
+}
+.login-form .btn-dark,
+.login-form .btn-dark:active{
+  background-color:#2f2b2b
+}
+.login-form .btn-dark:hover{
+  background-color:#0f0b0b
+}
+.login-form .forgot-link a{
+  color:#2f2b2b;
+  display:inline-block
+}
+.login-form .forgot-link a:hover{
+  color:#1f1b1b
+}
+/* Button CSS */
+.btn{
+  padding:.625rem 1.25rem;
+  font-size:16px;
+  letter-spacing:.5px
+}
+/* Form Fields CSS */
+.form-control{
+  font-family:'Open Sans', sans-serif;
+  letter-spacing:.5px;
+  color:#1f1b1b;
+  height:calc(1.5em + 0.75rem + 10px);
+}
+.form-control:focus{
+  outline:none;
+  box-shadow:none;
+  border-color:#0f0b0b
+}
+.form-text{
+  margin-top:.5rem;
+  font-size:14px;
+  letter-spacing:.5px;
+  color:#1f1b1b
+}
+.notes{
+  font-size:16px;
+  margin:-1rem 0 2rem 0;
+  color:#1f1b1b
+}
+.form-text.error{
+  color:#b71c1c
+}
+label.input-group-prepend{
+  margin-bottom:0
+}
+@media(min-width:1200px){
+  .login-form .logo{
+    height:54px
+  }
+}
+@media(min-width:768px) and (max-width:1199.98px){
+  .login-form .logo{
+    height:44px
+  }
+}
+@media(min-width:768px){
+  .login-form{
+    background: url('../images/login-bg.jpg') center no-repeat #000;
+    background-size:100%
+  }
+  .login-form .slogan{
+    font-size:24px;
+    line-height:34px
+  }
+  .login-form form{
+    padding:40px 30px 45px 30px
+  }
+  .login-form form h1{
+    font-size:2rem;
+    line-height:normal
+  }
+}
+@media(max-width:767.98px){
+  .login-form{
+    background: url('../images/login-bg.jpg') top no-repeat #000;
+    background-size:100%
+  }
+  .login-form .logo{
+    height:44px
+  }
+  .login-form .slogan{
+    font-size:20px;
+    line-height:30px
+  }
+  .login-form form{
+    padding:30px 25px 45px 25px
+  }
+  .login-form form h1{
+    font-size:1.5rem;
+    font-weight:600
+  }
+  .login-form .btn{
+    display:block;
+    width:100%
+  }
+}
+@media(min-width:576px){
+  .login-form .logo-row a{
+    width:100%;
+    align-items:center;
+    display:flex;
+    justify-content:space-between
+  }
+  .login-form .forgot-link{
+    text-align:right
+  }
+}
+@media(max-width:575.98px){
+  .container-fluid .login-form{
+    padding-left:10px;
+    padding-right:10px
+  }
+  .login-form .logo-row{
+    text-align:center
+  }
+  .login-form .logo-row a{
+    display:inline-block
+  }
+  .login-form .slogan{
+    display:block;
+    margin-top:1rem
+  }
+  .login-form form h1{
+    text-align:center
+  }
+  .login-form .forgot-link{
+    text-align:center;
+    margin-top:1.5rem
+  }
+}
